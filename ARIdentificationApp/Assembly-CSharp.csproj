@@ -61,7 +61,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\TurnOffTrackingOnTracked.cs" />
     <Compile Include="Assets\Scripts\VirtualModelLoad.cs" />
+    <Compile Include="Assets\ShowAllButtonClicked.cs" />
     <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
     <None Include="Assets\Vuforia\Shaders\CameraDiffuse.shader" />
     <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
