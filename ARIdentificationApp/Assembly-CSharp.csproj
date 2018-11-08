@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AccelerometerInput.cs" />
     <Compile Include="Assets\Scripts\TurnOffTrackingOnTracked.cs" />
     <Compile Include="Assets\Scripts\VirtualModelLoad.cs" />
     <Compile Include="Assets\ShowAllButtonClicked.cs" />
