@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-D:/SA_Franziska_Buergler/GitHubSync/ARIdentificationApp/ARIdentificationApp/Build/ARIdentificationApp-08-11-2018.apk
+D:/SA_Franziska_Buergler/GitHubSync/ARIdentificationApp/ARIdentificationApp/Build/ARIdentificationApp-10-11-2018.apk
 SceneListBegin?
 Assets/Scenes/SampleScene.unity
 SceneListEnd?
@@ -113,6 +113,7 @@ da21fc3f8056b1f91c3dd09c7bf4f90a UnityEngine.Networking.dll:UnityEngine.Networki
 529a95e9e8e7686c4816e08fbb37183f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 fc061f3ae8a876c0687e86378d4a447c UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 7ca56e063bd071986fff4f513cc4f477 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
+24bd7539963b6059f1e2658c41a03e18 Assembly-CSharp.dll:.AccelerometerInput
 0a006f3734181ba8b26758f0866152c0 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 486cd95c82d8305219c352c06b776e1f VuforiaScripts.dll:.DefaultInitializationErrorHandler
 382b8ef512fa8d6108723a01b57af65b UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsEventTracker
@@ -304,4 +305,3 @@ c1087bf328bbb39eba5a09f26c3b6368 Vuforia.UnityExtensions.dll:Vuforia.MultiTarget
 c8a41ce4eea7677f6dd2aa0e422a2f04 Vuforia.UnityExtensions.dll:Vuforia.VuMarkBehaviour
 c31ff9acb65f7a15b5c6fd77c3314d83 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 486cd95c82d8305219c352c06b776e1f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
-58cd012d9409b0053acc9e75d91889c0 Assembly-CSharp.dll:.AccelerometerInput
