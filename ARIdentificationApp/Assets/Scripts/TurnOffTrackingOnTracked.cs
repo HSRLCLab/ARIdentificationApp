@@ -8,7 +8,8 @@ public class TurnOffTrackingOnTracked : DefaultTrackableEventHandler
 {
     public Text Debug;
     public GameObject virtualModel;
-
+	public GameObject WarningToggle;
+	private bool firsttime = true;
 
     /*
     void OnTrackableStateChanged(TrackableBehaviour.Status previousStatus, TrackableBehaviour.Status newStatus) {
@@ -28,6 +29,9 @@ public class TurnOffTrackingOnTracked : DefaultTrackableEventHandler
         //TrackerManager.Instance.GetTracker<ObjectTracker>().Stop();
 
         //virtualModel.transform.parent = newParent.transform;
-               
+		if(firsttime){
+			WarningToggle.GetComponent<Toggle>().isOn = true;
+			firsttime = false;
+		}
     }
 }

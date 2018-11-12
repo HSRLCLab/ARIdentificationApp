@@ -8,7 +8,8 @@ using System.IO;
 public class AccelerometerInput : MonoBehaviour {
     public Text TextOutput;
     public Text Warntext;
-	public Canvas WarningMessage;
+	public GameObject WarningMessage;
+	public GameObject WarningToggle;
 
     private float previousX;
     private float previousY;
@@ -39,77 +40,48 @@ public class AccelerometerInput : MonoBehaviour {
     {
 
         counter++;
-        //Don't update the values to fast
-        if (counter % 10 == 0)
-        {
+        
             //Get acceleration change since last frame
             Vector3 acc = Input.acceleration;
-            acc.Normalize();
+            //acc.Normalize();
             float changeX = previousX - acc.x;
             float changeY = previousY - acc.y;
             float changeZ = previousZ - acc.z;
-            /*
-            float changeX = previousX - Input.acceleration.x;
-            float changeY = previousY - Input.acceleration.y;
-            float changeZ = previousZ - Input.acceleration.z;
-            */
-
+           
+		//Don't update the values to fast
+        if (counter % 10 == 0)
+        {
             TextOutput.text = "X Speed: " + changeX +
                             "\n Y Speed: " + changeY +
                             "\n Z Speed: " + changeZ;
-
-            previousX = Input.acceleration.x;
-            previousY = Input.acceleration.y;
-            previousZ = Input.acceleration.z;
-            //in case of too fast movement
-            if (changeX > 0.09)
+		}
+            previousX = acc.x;
+            previousY = acc.y;
+            previousZ = acc.z;
+            //in case of too fast movement (only if WarningToggle is enabled, means warnings can be disabled)
+            if (WarningToggle.GetComponent<Toggle>().isOn &&(changeX > 0.09 || changeY > 0.09 || changeZ > 0.09))
             {
                 Warntext.text = "Warning";
+				WarningMessage.SetActive(true);
             }
             else
             {
                 Warntext.text = "";
             }
 
-            //Trying to save information into file
-            //SaveToFile(changeX, changeY, changeZ);
-            //SaveToFile(acc.x, acc.y, acc.z);
-        }
+        
 
 
         //Save information into file
-        SaveToFile(Input.acceleration.x, Input.acceleration.y, Input.acceleration.z);
-		
+        //SaveToFile(Input.acceleration.x, Input.acceleration.y, Input.acceleration.z);
+		/*
 		//Show a very annoying message, if tablet was moved to fast
-		if(Input.acceleration.x > 0.09 || Input.acceleration.x < -0.09 
-		|| Input.acceleration.y > 0.09 || Input.acceleration.y < -0.09
-		|| Input.acceleration.z > 0.09 || Input.acceleration.z < -0.09){
-			WarningMessage.enabled = true;
-			
+		if(counter > 100 &&(Input.acceleration.x > 0.1 || Input.acceleration.x < -0.2 
+		|| Input.acceleration.y > -0.3 || Input.acceleration.y < -0.9
+		|| Input.acceleration.z > 0.5 || Input.acceleration.z < -0.9)){
+			WarningMessage.SetActive(true);
 		}
-		
-        //same game with gyroscope
-        /*
-              //Get acceleration change since last frame
-         float changeX = previousX - Input.gyro.rotationRate.x;
-         float changeY = previousY - Input.gyro.rotationRate.y;
-         float changeZ = previousZ - Input.gyro.rotationRate.z;
-
-
-         TextOutput.text = "X Speed: " + changeX +
-                         "\n Y Speed: " + changeY +
-                         "\n Z Speed: " + changeZ;
-
-         previousX = Input.gyro.rotationRate.x;
-         previousY = Input.gyro.rotationRate.y;
-         previousZ = Input.gyro.rotationRate.z;
-        
-        TextOutput.text = "X Speed: " + Input.gyro.rotationRate.x +
-                       "\n Y Speed: " + Input.gyro.rotationRate.y +
-                       "\n Z Speed: " + Input.gyro.rotationRate.z;
- */
-
-
+		*/
     }
 
     void SaveToFile(float changeX, float changeY, float changeZ)
