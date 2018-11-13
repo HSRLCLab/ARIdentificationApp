@@ -54,6 +54,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\AccelerometerInput.cs" />
+     <Compile Include="Assets\Scripts\BAHersche\Item.cs" />
+     <Compile Include="Assets\Scripts\BAHersche\ItemComponent.cs" />
+     <Compile Include="Assets\Scripts\ComponentInfo.cs" />
      <Compile Include="Assets\Scripts\positioningOptions.cs" />
      <Compile Include="Assets\Scripts\ShowAllButtonClicked.cs" />
      <Compile Include="Assets\Scripts\TurnOffTrackingOnTracked.cs" />
