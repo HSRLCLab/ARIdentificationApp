@@ -1,4 +1,11 @@
-﻿using System;
+﻿/* -----------------------------------------------------------------------
+	Date: 14.11.2018
+	Comment: Copied from Pickerzelle_V1.5_3 of BA from Simon Hersche 2017. 
+	Author: Franziska Bürgler
+	
+---------------------------------------------------------------------------*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

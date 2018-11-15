@@ -1,5 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+/* -----------------------------------------------------------------------
+	Date: 10.11.2018
+	Comment: Script to send out a warning in case the tablet is moved too fast.
+			Reason for this script: if the tablet is moved to fast, the virtual 
+			object will follow the camera and not stay at it's place.
+			Additionally not used function, to save the tablets movements into 
+			a file.
+	Author: Franziska Bürgler
+	
+---------------------------------------------------------------------------*/
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -23,11 +33,7 @@ public class AccelerometerInput : MonoBehaviour {
     Gyroscope m_Gyro;
     // Use this for initialization
     void Start() {
-        /*
-        //Set up and enable the gyroscope (check your device has one)
-        m_Gyro = Input.gyro;
-        m_Gyro.enabled = true;
-        */
+
         counter = 0;
 
         //For filewriting
@@ -41,33 +47,37 @@ public class AccelerometerInput : MonoBehaviour {
 
         counter++;
         
-            //Get acceleration change since last frame
-            Vector3 acc = Input.acceleration;
-            //acc.Normalize();
-            float changeX = previousX - acc.x;
-            float changeY = previousY - acc.y;
-            float changeZ = previousZ - acc.z;
-           
-		//Don't update the values to fast
+		//Get acceleration change since last frame
+		Vector3 acc = Input.acceleration;
+		
+		float changeX = previousX - acc.x;
+		float changeY = previousY - acc.y;
+		float changeZ = previousZ - acc.z;
+	   
+		//Don't update the values to fast as the user wouldn't be able to read them otherwise
+        //For debugging to show the numbers to the user
+        /*
         if (counter % 10 == 0)
         {
             TextOutput.text = "X Speed: " + changeX +
                             "\n Y Speed: " + changeY +
                             "\n Z Speed: " + changeZ;
 		}
-            previousX = acc.x;
-            previousY = acc.y;
-            previousZ = acc.z;
-            //in case of too fast movement (only if WarningToggle is enabled, means warnings can be disabled)
-            if (WarningToggle.GetComponent<Toggle>().isOn &&(changeX > 0.09 || changeY > 0.09 || changeZ > 0.09))
-            {
-                Warntext.text = "Warning";
-				WarningMessage.SetActive(true);
-            }
-            else
-            {
-                Warntext.text = "";
-            }
+		*/
+		previousX = acc.x;
+		previousY = acc.y;
+		previousZ = acc.z;
+		
+		//in case of too fast movement (only if WarningToggle is enabled, means warnings can be disabled)
+		if (WarningToggle.GetComponent<Toggle>().isOn &&(changeX > 0.09 || changeY > 0.09 || changeZ > 0.09))
+		{
+			Warntext.text = "Warning";
+			WarningMessage.SetActive(true);
+		}
+		else
+		{
+			Warntext.text = "";
+		}
 
         
 
@@ -86,16 +96,14 @@ public class AccelerometerInput : MonoBehaviour {
 
     void SaveToFile(float changeX, float changeY, float changeZ)
     {
-
-
+		//Format the current values
         string scores = System.DateTime.Now.ToString("HH:mm:ss") + ";" + changeX + ";" + changeY + "; " + changeZ + "\r\n";
 
-
         if (!File.Exists(filePath))
-             {
-            // File.WriteAllText(filePath, scores);
-
+        {
+            
             StreamWriter sr = System.IO.File.CreateText(filePath);
+			//Write header line in file
             sr.WriteLine("time;AccelerationChangeX;AccelerationChangeY;AccelerationChangeZ");
             sr.WriteLine(scores);
             sr.Close();
@@ -110,8 +118,5 @@ public class AccelerometerInput : MonoBehaviour {
             Debug.Log("appended to file");
             TextOutput.text = "append to file " + filePath;
         }
-
-       
     }
-
 }
