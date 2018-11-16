@@ -44,8 +44,6 @@ public class ComponentInfo : MonoBehaviour {
 			//Get the direct parent to add the item with the Stücklisteninformation there
 			GameObject itemGameObject = child.transform.parent.gameObject;
 
-            
-
             //Set newly created item as child of the component, but first add ItemComponent (doesn't work otherwise)
             var ic = itemGameObject.AddComponent<ItemComponent>();
             //Add some information to the components that shall be clickable
@@ -63,18 +61,14 @@ public class ComponentInfo : MonoBehaviour {
         //Clickevents on component
         if (Input.GetMouseButtonDown(0))
         {
-            Debuggtext.text += "Mousedown ";
+            Debuggtext.text = "Mousedown ";
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit))
             {
                 Debuggtext.text += "Hit " + hit.transform.name;
 
-
-                //Change material
-                //hit.transform.GetComponentInChildren<MeshRenderer>().material = greyMaterial;
                 currentHit = hit.transform;
-
 
                 //Show components information (name, number description
                 foreach (Text infotext in ItemValues.GetComponentsInChildren<Text>())
@@ -110,36 +104,30 @@ public class ComponentInfo : MonoBehaviour {
                     foreach (MeshRenderer siblingAndSelf in currentlySelected.transform.parent.GetComponentsInChildren<MeshRenderer>())
                     {
                         siblingAndSelf.material = previousmaterial;
-                        //currentlySelected.GetComponentInChildren<MeshRenderer>().material = previousmaterial;
                     }
                 }
+
                 //store the selected object in a global variable
                 currentlySelected = currentHit.gameObject;
                 previousmaterial = currentlySelected.GetComponentInChildren<MeshRenderer>().material;
+
                 //Change material of self and all siblings
                 foreach (MeshRenderer siblingAndSelf in currentlySelected.transform.parent.GetComponentsInChildren<MeshRenderer>())
                 {
                     siblingAndSelf.material = selectedMaterial;
-                    //currentlySelected.GetComponentInChildren<MeshRenderer>().material = selectedMaterial;
                 }
             }
             else
             {
-                //TODO: If the disable button was clicked, the component shall not be unselected
-
                 //reset previously selected
                 if (currentlySelected != null)
                 {
                     foreach (MeshRenderer siblingAndSelf in currentlySelected.transform.parent.GetComponentsInChildren<MeshRenderer>())
                     {
                         siblingAndSelf.material = previousmaterial;
-                        //currentlySelected.GetComponentInChildren<MeshRenderer>().material = previousmaterial;
                     }
                 }
-                /*
-                currentlySelected = null;
-                previousmaterial = null;
-                */
+                
                 //Set the components menue to the default values
                 defaultComponentInfo();
             }
@@ -156,7 +144,6 @@ public class ComponentInfo : MonoBehaviour {
         if (currentlySelected != null) {
             if (currentlySelected.activeInHierarchy)
             {
-                //currentlySelected.SetActive(false);
                 //Disable currentlySelected and all its siblings (in case it still persists of multiple parts)
                 foreach (MeshRenderer siblingAndSelf in currentlySelected.transform.parent.GetComponentsInChildren<MeshRenderer>()) { 
                     siblingAndSelf.gameObject.SetActive(false);
@@ -164,13 +151,11 @@ public class ComponentInfo : MonoBehaviour {
             }
             //Allow showing if component is still selected
             else {
-                //currentlySelected.SetActive(true);
                 //Enable currentlySelected and all its siblings (in case it still persists of multiple parts)
                 foreach (MeshRenderer siblingAndSelf in currentlySelected.transform.parent.GetComponentsInChildren<MeshRenderer>())
                 {
                     siblingAndSelf.gameObject.SetActive(true);
                 }
-                //currentlySelected.transform.parent.GetComponentInChildren<MeshRenderer>().gameObject.SetActive(true);
             }
         }
     }
