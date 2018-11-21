@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 371}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -42,10 +42,10 @@ MonoBehaviour:
     y: 30
     width: 2544
     height: 1291
-  m_MinSize: {x: 683, y: 492}
-  m_MaxSize: {x: 14004, y: 14042}
+  m_MinSize: {x: 681, y: 321}
+  m_MaxSize: {x: 12006, y: 8021}
   vertical: 0
-  controlID: 96
+  controlID: 75
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -114,14 +114,14 @@ MonoBehaviour:
     y: 1020
     width: 1766
     height: 271
-  m_MinSize: {x: 232, y: 271}
-  m_MaxSize: {x: 10002, y: 10021}
-  m_ActualView: {fileID: 14}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 14}
   - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -143,7 +143,7 @@ MonoBehaviour:
     y: 0
     width: 2544
     height: 1341
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 371}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -206,10 +206,10 @@ MonoBehaviour:
     y: 0
     width: 1766
     height: 1291
-  m_MinSize: {x: 406, y: 492}
-  m_MaxSize: {x: 10002, y: 14042}
+  m_MinSize: {x: 406, y: 321}
+  m_MaxSize: {x: 8006, y: 8021}
   vertical: 1
-  controlID: 97
+  controlID: 76
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 98
+  controlID: 77
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -402,20 +402,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Plugins/Android
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 58
   m_LastFolders:
-  - Assets/Plugins/Android
+  - Assets/Scripts
   m_LastFoldersGridSize: 58
   m_LastProjectPath: D:\SA_Franziska_Buergler\GitHubSync\ARIdentificationApp\ARIdentificationApp
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 119}
-    m_SelectedIDs: e62c0000
-    m_LastClickedID: 11494
-    m_ExpandedIDs: 00000000a82b0000cc2b00003c2c0000502c0000822c0000e22c0000242d0000542d0000702d0000c02d0000c62d0000062e0000842e0000182f00007e2f000000ca9a3b
+    scrollPos: {x: 0, y: 60}
+    m_SelectedIDs: 542d0000
+    m_LastClickedID: 11604
+    m_ExpandedIDs: 00000000a82b0000cc2b0000502c0000822c0000e22c0000242d0000542d0000c62d0000062e0000842e0000182f00007e2f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -468,8 +468,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: a22a0000
+    m_LastClickedInstanceID: 10914
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: bc240000482400003e24000096240000802400003a240000b8240000322500008e26000086260000902600009a260000922600009c2600004e290000b02900005a2700003e320000be290000fa2700002c28000066270000682700005e2700006c27000078270000e428000098270000b22800007a2700006e270000403e000058280000cc260000443200004c3e0000ce260000d2260000d8320000d62600002c3c0000a8450000363c0000d83e0000042a0000042700001a2700000227000008270000ee260000f4260000f62600004228000044280000000000000e2f0000
     m_RenameOverlay:
@@ -559,9 +559,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 6e290000
-    m_LastClickedID: 0
-    m_ExpandedIDs: f4dff8ff7ae0f8fffae0f8ff44e3f8ff2ad1f9ffb0d1f9ff30d2f9ff7ed4f9ffb8f2ffff3cf3ffffbcf3ffff06f6ffffe6fbffff000000000631000020330000
+    m_SelectedIDs: a0320000
+    m_LastClickedID: 12960
+    m_ExpandedIDs: 8cf7ffffe6fbffff000000000e3300000034000070350000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -611,14 +611,14 @@ MonoBehaviour:
     height: 999
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 26.010426161344974
+  lastFramingTime: 725.6995715504346
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.8238199, y: -5.563814, z: 118.16043}
+    m_Target: {x: 0.63167906, y: -0.9049797, z: 4.418283}
     speed: 2
-    m_Value: {x: 1.8238199, y: -5.563814, z: 118.16043}
+    m_Value: {x: 0.63167906, y: -0.9049797, z: 4.418283}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -646,13 +646,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.05876554, y: -0.015597985, z: 0.0009189154, w: -0.9981495}
+    m_Target: {x: -0.45664242, y: -0.016568426, z: 0.0085070105, w: -0.8894554}
     speed: 2
-    m_Value: {x: -0.05876554, y: -0.015597985, z: 0.0009189154, w: -0.9981495}
+    m_Value: {x: -0.45664242, y: -0.016568426, z: 0.0085070105, w: -0.8894554}
   m_Size:
-    m_Target: 138.00372
+    m_Target: 18.894045
     speed: 2
-    m_Value: 138.00372
+    m_Value: 18.894045
   m_Ortho:
     m_Target: 0
     speed: 2

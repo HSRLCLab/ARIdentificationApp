@@ -22,6 +22,7 @@ public class ComponentInfo : MonoBehaviour {
     private GameObject child;
     private GameObject currentlySelected;
     private Material previousmaterial = null;
+    private bool previousenabled = true;
     // Use this for initialization
     void Start () {
 		
@@ -104,17 +105,22 @@ public class ComponentInfo : MonoBehaviour {
                     foreach (MeshRenderer siblingAndSelf in currentlySelected.transform.parent.GetComponentsInChildren<MeshRenderer>())
                     {
                         siblingAndSelf.material = previousmaterial;
+                        //hide again if it was hidden before
+                        siblingAndSelf.enabled = previousenabled;
                     }
                 }
 
                 //store the selected object in a global variable
                 currentlySelected = currentHit.gameObject;
                 previousmaterial = currentlySelected.GetComponentInChildren<MeshRenderer>().material;
+                previousenabled = currentlySelected.GetComponentInChildren<MeshRenderer>().enabled;
 
                 //Change material of self and all siblings
                 foreach (MeshRenderer siblingAndSelf in currentlySelected.transform.parent.GetComponentsInChildren<MeshRenderer>())
                 {
                     siblingAndSelf.material = selectedMaterial;
+                    siblingAndSelf.enabled = true; //show component even if it was previously not shown
+
                 }
             }
             else
@@ -125,6 +131,8 @@ public class ComponentInfo : MonoBehaviour {
                     foreach (MeshRenderer siblingAndSelf in currentlySelected.transform.parent.GetComponentsInChildren<MeshRenderer>())
                     {
                         siblingAndSelf.material = previousmaterial;
+                        //hide again if it was hidden before
+                        siblingAndSelf.enabled = previousenabled;
                     }
                 }
                 
@@ -231,6 +239,10 @@ public class ComponentInfo : MonoBehaviour {
 			currentItem.number = "CAD-30008002";
 			currentItem.description = "ArmServo";
 			break;
+        case "Akku":
+            currentItem.number = "Keine CAD nummmer";
+            currentItem.description = "Akku";
+            break;
         default:
 			currentItem = null;
             break;

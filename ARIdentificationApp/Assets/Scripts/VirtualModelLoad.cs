@@ -61,7 +61,7 @@ public class VirtualModelLoad : MonoBehaviour
     public void HideVirtualModel(Toggle callingButton)
     {
         //Go through all children wîth mesh collider and disable or enable the mesh collider (make it invisible but still interactable)
-        foreach (MeshRenderer component in virtualModel.GetComponentsInChildren<MeshRenderer>())
+        foreach (MeshRenderer component in virtualModel.GetComponentsInChildren<MeshRenderer>(true))
         {
             component.enabled = callingButton.isOn;
         }
