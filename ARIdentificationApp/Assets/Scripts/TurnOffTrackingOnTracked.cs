@@ -13,8 +13,9 @@ public class TurnOffTrackingOnTracked : DefaultTrackableEventHandler
 
     /*
     void OnTrackableStateChanged(TrackableBehaviour.Status previousStatus, TrackableBehaviour.Status newStatus) {
+        
         TrackerManager.Instance.GetTracker<ObjectTracker>().Stop();
-        Debug.text = " ModelTarget trackerStopped ";
+        Debug.text = " ModelTarget trackerStopped " + previousStatus;
     }
     */
     protected override void OnTrackingLost()
@@ -32,6 +33,7 @@ public class TurnOffTrackingOnTracked : DefaultTrackableEventHandler
 		if(firsttime){
 			WarningToggle.GetComponent<Toggle>().isOn = true;
 			firsttime = false;
-		}
+
+        }
     }
 }

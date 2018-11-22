@@ -1,8 +1,11 @@
 Android
 PlayerPath?
-D:/SA_Franziska_Buergler/GitHubSync/ARIdentificationApp/ARIdentificationApp/Build/ARIdentificationApp-16-11-2018.apk
+D:/SA_Franziska_Buergler/GitHubSync/ARIdentificationApp/ARIdentificationApp/Build/ARIdentificationApp-22-11-2018-AllScenes.apk
 SceneListBegin?
+Assets/Scenes/MainScene.unity
+Assets/Scenes/Proof.unity
 Assets/Scenes/SampleScene.unity
+Assets/Scenes/ModelTargetGroundPlaneScene.unity
 SceneListEnd?
 c422dd62785a6d0afa870fbd111886ce Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 7b803eb2910e9b4cd5e521ae07b9f7d6 Unity.TextMeshPro.dll:TMPro.TMP_Dropdown
@@ -18,6 +21,7 @@ c7dd12c15208b0447e101f80038706df UnityEngine.Timeline.dll:UnityEngine.Timeline.A
 0ddb2c46096a1e59e0dce07886ce4769 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 0ddb2c46096a1e59e0dce07886ce4769 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 64f3a13c1277a7f1324321d93d0ec13b UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
+0393450c6849f0e32536ea283d5f80b6 Assembly-CSharp.dll:.MTGPS_TurnOffTrackingOnTracked
 160d60022fb7651dd50b1da85266eee2 Assembly-CSharp.dll:.VirtualModelLoad
 f6637497451c9a030c421de4a1ad5cdb Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
 b14b4630cc47b6e9ea8a644551a6a8cc Unity.TextMeshPro.dll:TMPro.TMP_Text
@@ -53,6 +57,7 @@ a44114bd4fa541174f78b4bb92bacb48 UnityEngine.UI.dll:UnityEngine.EventSystems.Sta
 e90403eeda069970e0b9de1533de13a6 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 2d58ca16854b99daea8c45e9c0f367b7 UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 16da51d1b62ef6d4ee1849350434023b UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
+5dd8485451ae18c65d3ef59f54c3c1cc Assembly-CSharp.dll:.Proof_TurnOffTrackingOnTracked
 50b0b141074b216c8b53b1bd467f73c9 Unity.TextMeshPro.dll:TMPro.TMP_InputField
 53cefe5d98cadefbab750835e70b89c0 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 486cd95c82d8305219c352c06b776e1f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
@@ -194,6 +199,7 @@ c8a41ce4eea7677f6dd2aa0e422a2f04 Vuforia.UnityExtensions.dll:Vuforia.VuMarkBehav
 c31ff9acb65f7a15b5c6fd77c3314d83 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 486cd95c82d8305219c352c06b776e1f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
 f16835701e71dd5d6fb1fed4b7aff1d8 Unity.TextMeshPro.dll:TMPro.TMP_Asset
+62298ff428090ab8dfc49484828b7c2d Assembly-CSharp.dll:.MainScene_SwitchSceneOptions
 486cd95c82d8305219c352c06b776e1f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
 303f19cade768004f68baea7661665e4 Assembly-CSharp.dll:.TurnOffTrackingOnTracked
 eaf0bcdb10d442a4029d615f41d09957 Unity.TextMeshPro.dll:TMPro.TextContainer
