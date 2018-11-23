@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement; //For SceneManager and stuff
 
 public class MainScene_SwitchSceneOptions : MonoBehaviour {
 
-    public GameObject ScenePanel;
+    public GameObject SceneLoadingPanel;
+   
 	// Use this for initialization
 	void Start () {
 		
@@ -17,12 +18,11 @@ public class MainScene_SwitchSceneOptions : MonoBehaviour {
 		
 	}
 
-    public void ShowScenePanel(Toggle toggleButton) {
-        ScenePanel.SetActive(toggleButton.isOn);
-    }
+    
 
     public void ChangeScene(string SceneName) {
         Debug.Log("ChangeScene to " + SceneName);
+        /*
         if (SceneName == "MainScene")
         {
             SceneManager.LoadScene(SceneName, LoadSceneMode.Single);
@@ -38,5 +38,8 @@ public class MainScene_SwitchSceneOptions : MonoBehaviour {
             }
             SceneManager.LoadSceneAsync(SceneName, LoadSceneMode.Additive);
         }
+        */
+        SceneLoadingPanel.SetActive(true);
+        SceneManager.LoadScene(SceneName, LoadSceneMode.Single);
     }
 }
