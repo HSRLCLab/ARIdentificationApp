@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ModelTargetGroundPlaneScene.unity
     guid: 81f50aa46ec7b8944bac9a80a69c7b33
+  - enabled: 1
+    path: Assets/Scenes/QRCodeScene.unity
+    guid: d6b3bf01ddec8f945a2ab98fd19cdcd5
   m_configObjects: {}

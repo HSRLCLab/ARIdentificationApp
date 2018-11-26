@@ -74,6 +74,7 @@
     <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
     <None Include="Assets\Vuforia\Shaders\CameraDiffuse.shader" />
     <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
+    <None Include="Assets\StreamingAssets\Vuforia\QRCode.xml" />
     <None Include="Assets\Vuforia\Shaders\VideoBackground.shader" />
     <None Include="Assets\Vuforia\Shaders\OutlineOpaque.shader" />
     <None Include="Assets\StreamingAssets\Vuforia\AsBuiltRoboterUnited.xml" />

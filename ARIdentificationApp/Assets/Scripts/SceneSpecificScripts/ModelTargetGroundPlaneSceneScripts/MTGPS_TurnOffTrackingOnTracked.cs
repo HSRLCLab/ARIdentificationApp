@@ -104,15 +104,15 @@ public class MTGPS_TurnOffTrackingOnTracked : DefaultTrackableEventHandler
             //Try to programmatically place the virtual model by triggering the PlaneFinder
             Vector2 moreOrLessWhereModelTargetIs = new Vector2(ModelTarget.transform.position.x, ModelTarget.transform.position.y);
             myBehaviour.PerformHitTest(moreOrLessWhereModelTargetIs);
-            
-            
+
+            Debugtext.text += "HitPlace " + moreOrLessWhereModelTargetIs;
             //ModelGroundStage.transform.position = ModelTarget.transform.position;
             ModelGroundStage.transform.eulerAngles = ModelTarget.transform.eulerAngles;
             //Test if model can be placed on the ground
             ModelGroundStage.transform.position = new Vector3(GroundStage.transform.position.x, ModelGroundStage.transform.position.y, ModelGroundStage.transform.position.z);
             firsttime = false;
-
-
+            Debugtext.text += "PlacePlace " + ModelGroundStage.transform.position;
+            //ModelTargetBehaviour.GuideViewDisplayMode guideViewDisplayMode = GuideView3DBehaviour;
         }
     }
 }

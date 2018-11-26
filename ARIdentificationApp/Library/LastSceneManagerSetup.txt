@@ -1,13 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/MainScene.unity
-  isLoaded: 0
-  isActive: 0
-- path: Assets/Scenes/SampleScene.unity
-  isLoaded: 0
-  isActive: 0
-- path: Assets/Scenes/Proof.unity
-  isLoaded: 0
-  isActive: 0
 - path: Assets/Scenes/ModelTargetGroundPlaneScene.unity
   isLoaded: 1
   isActive: 1

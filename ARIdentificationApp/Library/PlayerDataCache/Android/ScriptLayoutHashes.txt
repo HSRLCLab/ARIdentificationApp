@@ -1,11 +1,12 @@
 Android
 PlayerPath?
-D:/SA_Franziska_Buergler/GitHubSync/ARIdentificationApp/ARIdentificationApp/Build/ARIdentificationApp-23-11-2018-AllScenes.apk
+D:/SA_Franziska_Buergler/GitHubSync/ARIdentificationApp/ARIdentificationApp/Build/ARIdentificationApp-26-11-2018-AllScenes.apk
 SceneListBegin?
 Assets/Scenes/MainScene.unity
 Assets/Scenes/Proof.unity
 Assets/Scenes/SampleScene.unity
 Assets/Scenes/ModelTargetGroundPlaneScene.unity
+Assets/Scenes/QRCodeScene.unity
 SceneListEnd?
 c422dd62785a6d0afa870fbd111886ce Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 7b803eb2910e9b4cd5e521ae07b9f7d6 Unity.TextMeshPro.dll:TMPro.TMP_Dropdown
