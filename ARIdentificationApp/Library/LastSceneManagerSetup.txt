@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/ModelTargetGroundPlaneScene.unity
+- path: Assets/Scenes/QRCodeScene.unity
   isLoaded: 1
   isActive: 1
