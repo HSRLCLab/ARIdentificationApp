@@ -470,7 +470,6 @@ GameObject:
   - component: {fileID: 300653012}
   - component: {fileID: 300653011}
   - component: {fileID: 300653010}
-  - component: {fileID: 300653009}
   m_Layer: 0
   m_Name: Agree_Button
   m_TagString: Untagged
@@ -497,17 +496,6 @@ RectTransform:
   m_AnchoredPosition: {x: -3.0001929, y: -548}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &300653009
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 300653007}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1889ce10f66eaaf4880213616cc94c65, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &300653010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4213,7 +4201,6 @@ GameObject:
   - component: {fileID: 1284608460}
   - component: {fileID: 1284608459}
   - component: {fileID: 1284608458}
-  - component: {fileID: 1284608457}
   m_Layer: 0
   m_Name: Reset_Button
   m_TagString: Untagged
@@ -4240,17 +4227,6 @@ RectTransform:
   m_AnchoredPosition: {x: 120.1, y: -124.9}
   m_SizeDelta: {x: 250, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1284608457
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1284608455}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1889ce10f66eaaf4880213616cc94c65, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1284608458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6297,7 +6273,6 @@ GameObject:
   - component: {fileID: 1717815295}
   - component: {fileID: 1717815294}
   - component: {fileID: 1717815293}
-  - component: {fileID: 1717815292}
   m_Layer: 0
   m_Name: Agree_Button
   m_TagString: Untagged
@@ -6324,17 +6299,6 @@ RectTransform:
   m_AnchoredPosition: {x: -3.0001929, y: -548}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1717815292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1717815290}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1889ce10f66eaaf4880213616cc94c65, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1717815293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8381,6 +8345,7 @@ MonoBehaviour:
   blue: {fileID: 2100000, guid: 96f3e0b9f4df66d42a48eb2762da6e2f, type: 2}
   magenta: {fileID: 2100000, guid: 620cdd062816b0947aa3ba4602a26cc6, type: 2}
   greyMaterial: {fileID: 2100000, guid: cbfd382baffe6bc499ee58fc8d72e2da, type: 2}
+  testmaterial: {fileID: 0}
 --- !u!114 &1947422201
 MonoBehaviour:
   m_ObjectHideFlags: 0

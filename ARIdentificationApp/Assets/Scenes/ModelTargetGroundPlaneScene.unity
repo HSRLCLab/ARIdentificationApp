@@ -6696,7 +6696,6 @@ GameObject:
   - component: {fileID: 943453189}
   - component: {fileID: 943453188}
   - component: {fileID: 943453187}
-  - component: {fileID: 943453186}
   m_Layer: 0
   m_Name: ShowAll_Button
   m_TagString: Untagged
@@ -6723,17 +6722,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 6}
   m_SizeDelta: {x: 300, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &943453186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 943453184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 981f30fdfa95bef4ba0644711f8bf878, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &943453187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10129,7 +10117,6 @@ GameObject:
   - component: {fileID: 1390078634}
   - component: {fileID: 1390078633}
   - component: {fileID: 1390078632}
-  - component: {fileID: 1390078631}
   m_Layer: 0
   m_Name: Agree_Button
   m_TagString: Untagged
@@ -10156,17 +10143,6 @@ RectTransform:
   m_AnchoredPosition: {x: -3.0001929, y: -548}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1390078631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1390078629}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1889ce10f66eaaf4880213616cc94c65, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1390078632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11199,7 +11175,6 @@ GameObject:
   - component: {fileID: 1503979574}
   - component: {fileID: 1503979573}
   - component: {fileID: 1503979572}
-  - component: {fileID: 1503979571}
   m_Layer: 0
   m_Name: Reset_Button
   m_TagString: Untagged
@@ -11226,17 +11201,6 @@ RectTransform:
   m_AnchoredPosition: {x: 120.1, y: -124.9}
   m_SizeDelta: {x: 250, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1503979571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1503979569}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1889ce10f66eaaf4880213616cc94c65, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1503979572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14958,7 +14922,6 @@ GameObject:
   - component: {fileID: 1981095510}
   - component: {fileID: 1981095509}
   - component: {fileID: 1981095508}
-  - component: {fileID: 1981095507}
   m_Layer: 0
   m_Name: Paint_Button
   m_TagString: Untagged
@@ -14985,17 +14948,6 @@ RectTransform:
   m_AnchoredPosition: {x: 500, y: 6}
   m_SizeDelta: {x: 300, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1981095507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1981095505}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1889ce10f66eaaf4880213616cc94c65, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1981095508
 MonoBehaviour:
   m_ObjectHideFlags: 0
