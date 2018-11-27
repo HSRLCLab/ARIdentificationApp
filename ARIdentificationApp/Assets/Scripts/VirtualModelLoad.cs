@@ -10,6 +10,7 @@ public class VirtualModelLoad : MonoBehaviour
     public Material blue;
     public Material magenta;
     public Material greyMaterial;
+    public Material testmaterial;
 
     // Use this for initialization
     void Start()
@@ -30,15 +31,19 @@ public class VirtualModelLoad : MonoBehaviour
     public void PaintVirtualModel()
     {
 
+        Debug.Log("Virtual Model paint");
         //Go through all children and set a material if they have a mesh collider
         foreach (MeshRenderer component in virtualModel.GetComponentsInChildren<MeshRenderer>(true))
         {
-            //Debug.Log("Found a child " + component.gameObject.name);
-            Debug.Log("Found a child with meshrenderer: " + component.gameObject.name);
-            component.gameObject.AddComponent<MeshCollider>();
-            Debug.Log("Found childs parent " + component.transform.parent.gameObject.name);
-            var parent = component.transform.parent.gameObject.name;
+            //Debug.Log("Found a child with meshrenderer: " + component.gameObject.name);
+            if (component.gameObject.GetComponent<MeshCollider>() == null) {
+                component.gameObject.AddComponent<MeshCollider>();
+            }
+            //Debug.Log("Found childs parent " + component.transform.parent.gameObject.name);
+            var parent = component.transform.parent.gameObject;
             Material mymaterial;
+
+            /*
             int numericparent = int.Parse(parent);
             if (numericparent % 3 == 0)
             {
@@ -52,9 +57,32 @@ public class VirtualModelLoad : MonoBehaviour
             {
                 mymaterial = blue;
             }
+            */
+            mymaterial = testmaterial;
+            // Get color based on riskofFailure (only of the parts which have a stuecklisten eintrag)
+            if (parent.GetComponent<ItemComponent>().item != null) { 
+                string failurerisk = parent.GetComponent<ItemComponent>().item.riskOfFailure;
+                switch (failurerisk) {
+                    case "blue":
+                        mymaterial = blue;
+                        break;
+                    case "magenta":
+                        mymaterial = magenta;
+                        break;
+                    case "cyan":
+                        mymaterial = cyan;
+                        break;
+                    default:
+                        mymaterial = component.material;
+                        break;
+                }
+            }
 
             component.material = mymaterial;
+
         }
+        //update the previous values as the have changed in the meantime
+        virtualModel.GetComponentInParent<ComponentInfo>().updatePreviousValues(false);
     }
 
     //Hide and shows the virtual model
@@ -76,6 +104,8 @@ public class VirtualModelLoad : MonoBehaviour
             component.gameObject.SetActive(true);
             //The Mesh Renderer will be enabled in the HideVirtualModel which is called after this function
         }
+        //update the previous values as the have changed in the meantime
+        virtualModel.GetComponent<ComponentInfo>().updatePreviousValues(true);
     }
     
 }

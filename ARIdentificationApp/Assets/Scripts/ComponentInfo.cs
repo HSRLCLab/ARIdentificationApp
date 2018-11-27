@@ -25,31 +25,33 @@ public class ComponentInfo : MonoBehaviour {
     private bool previousenabled = true;
     // Use this for initialization
     void Start () {
-		
-		//Add an item to each component
-		foreach (Component childMeshFilter in VirtualModellFirstChild.GetComponentsInChildren<MeshFilter>())
+
+        //Add an item to each component
+        foreach (Component childMeshFilter in VirtualModellFirstChild.GetComponentsInChildren<MeshFilter>())
         {
-			
-			//Add MeshCollider if it doesn't have one yet
-			child = childMeshFilter.gameObject;
-			if (child.GetComponent<MeshCollider>() == null)
-			{
+
+            //Add MeshCollider if it doesn't have one yet
+            child = childMeshFilter.gameObject;
+            if (child.GetComponent<MeshCollider>() == null)
+            {
                 child.AddComponent<MeshCollider>();
                 //AddMeshCollider collider = child.AddComponent<AddMeshCollider>();
-				//child.AddComponent<InputBehavior>();
-				//collider.update1();
-			}
+                //child.AddComponent<InputBehavior>();
+                //collider.update1();
+            }
 
+
+
+            //Get the direct parent to add the item with the Stücklisteninformation there (if not already done so)
+            GameObject itemGameObject = child.transform.parent.gameObject;
+            if (itemGameObject.GetComponent<ItemComponent>() == null) { 
+                //Set newly created item as child of the component, but first add ItemComponent (doesn't work otherwise)
+                var ic = itemGameObject.AddComponent<ItemComponent>();
+                //Add some information to the components that shall be clickable
                 
-			
-			//Get the direct parent to add the item with the Stücklisteninformation there
-			GameObject itemGameObject = child.transform.parent.gameObject;
-
-            //Set newly created item as child of the component, but first add ItemComponent (doesn't work otherwise)
-            var ic = itemGameObject.AddComponent<ItemComponent>();
-            //Add some information to the components that shall be clickable
-            ic.item = ManualMapping(itemGameObject.name);
-
+                ic.item = ManualMapping(itemGameObject.name);
+                
+            }
             counter++;
 			
 		}
@@ -187,6 +189,25 @@ public class ComponentInfo : MonoBehaviour {
         }
     }
 
+    //Special case if Show_All or Paint button was clicked
+    public void updatePreviousValues(bool showall)
+    {
+        //previousmaterial = currentlySelected.GetComponentInChildren<MeshRenderer>().material;
+        Debug.Log("Updateprevious called " + showall);
+
+        //if all compnoents are shown, don't hide them
+        if (showall)
+        {
+            previousenabled = true;
+        }
+        //if paint button was clicked, the material has changed
+        else {
+            Debug.Log("Previous " + previousmaterial);
+            previousmaterial = currentlySelected.GetComponentInChildren<MeshRenderer>().material;
+            Debug.Log("NewPrevious " + previousmaterial);
+        }
+    }
+
     //Import wasn't properly done, so there needs to be done some manual mapping
     Item ManualMapping(string name){
         /*
@@ -218,30 +239,35 @@ public class ComponentInfo : MonoBehaviour {
 
 
 		*/
-		
-		Item currentItem  = new Item();
+
+        Item currentItem  = new Item();
 		
 		switch(name){
 		case "5":
 		case "8":
 			currentItem.number = "45590-4198367";
 			currentItem.description = "Greifer";
-			break;
+            currentItem.riskOfFailure = "blue";
+            break;
 		case "7":
 			currentItem.number = "CAD-30008002";
 			currentItem.description = "ServoGrundhalter";
-			break;
+            currentItem.riskOfFailure = "blue";
+            break;
 		case "10":
 			currentItem.number = "CAD-30008004";
 			currentItem.description = "GreiferServo";
-			break;
+            currentItem.riskOfFailure = "cyan";
+            break;
 		case "11":
 			currentItem.number = "CAD-30008002";
 			currentItem.description = "ArmServo";
-			break;
+            currentItem.riskOfFailure = "magenta";
+            break;
         case "Akku":
             currentItem.number = "Keine CAD nummmer";
             currentItem.description = "Akku";
+            currentItem.riskOfFailure = "magenta";
             break;
         default:
 			currentItem = null;

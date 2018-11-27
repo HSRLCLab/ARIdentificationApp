@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/QRCodeScene.unity
     guid: d6b3bf01ddec8f945a2ab98fd19cdcd5
+  - enabled: 1
+    path: Assets/Scenes/QRGPScene.unity
+    guid: f7791f7a05a16cd4395e9c92973f370d
   m_configObjects: {}

@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\SceneSpecificScripts\MainScene\MainScene_SwitchSceneOptions.cs" />
     <Compile Include="Assets\Scripts\SceneSpecificScripts\ModelTargetGroundPlaneSceneScripts\MTGPS_TurnOffTrackingOnTracked.cs" />
     <Compile Include="Assets\Scripts\SceneSpecificScripts\ProofSceneScripts\Proof_TurnOffTrackingOnTracked.cs" />
+    <Compile Include="Assets\Scripts\SceneSpecificScripts\QRGPScene\QRGP_TrackableEventHandler.cs" />
     <Compile Include="Assets\Scripts\TurnOffTrackingOnTracked.cs" />
     <Compile Include="Assets\Scripts\VirtualModelLoad.cs" />
     <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
