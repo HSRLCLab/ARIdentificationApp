@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-D:/SA_Franziska_Buergler/GitHubSync/ARIdentificationApp/ARIdentificationApp/Build/ARIdentificationApp-27-11-2018-AllScenes.apk
+D:/SA_Franziska_Buergler/GitHubSync/ARIdentificationApp/ARIdentificationApp/Build/ARIdentificationApp-29-11-2018-AllScenes.apk
 SceneListBegin?
 Assets/Scenes/MainScene.unity
 Assets/Scenes/Proof.unity
@@ -244,6 +244,7 @@ aac9c55ae7ba4b95b852a7d9c191acd1 Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 36135496d38175af74733847eb8de7fb Assembly-CSharp.dll:.QRGP_TrackableEventHandler
 419592f900a43de2c0b35badb1fa0b78 Assembly-CSharp.dll:.ComponentInfo
 e04611b8715e6833d2bd7010fc6be10b Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
+5f53f09959d50c35415f499ed65899ef Assembly-CSharp.dll:.QRGP_MovingScript
 2f9af06a78208a67db480e9bfed4a076 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 9318334b30e9f195f573b2ce00154b95 Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.ItemComponent

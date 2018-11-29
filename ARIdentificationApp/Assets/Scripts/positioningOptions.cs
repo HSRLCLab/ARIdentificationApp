@@ -20,7 +20,7 @@ public class positioningOptions : MonoBehaviour {
 	public void MoveUp(){
 		// Move the object upward in world space 1 unit/second.
 		VirtualModel.transform.Translate(0, Time.deltaTime, 0, Space.World);
-	}
+    }
 	
 	public void MoveDown(){
 		// Move the object upward in world space 1 unit/second.
