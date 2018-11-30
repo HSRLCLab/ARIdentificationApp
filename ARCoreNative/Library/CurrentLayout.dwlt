@@ -42,10 +42,10 @@ MonoBehaviour:
     y: 30
     width: 2560
     height: 1307
-  m_MinSize: {x: 683, y: 492}
-  m_MaxSize: {x: 14004, y: 14042}
+  m_MinSize: {x: 681, y: 342}
+  m_MaxSize: {x: 12006, y: 8042}
   vertical: 0
-  controlID: 63
+  controlID: 116
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -89,8 +89,8 @@ MonoBehaviour:
     y: 0
     width: 532
     height: 890
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -114,14 +114,14 @@ MonoBehaviour:
     y: 890
     width: 1775
     height: 417
-  m_MinSize: {x: 232, y: 271}
-  m_MaxSize: {x: 10002, y: 10021}
-  m_ActualView: {fileID: 14}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 14}
   - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -206,10 +206,10 @@ MonoBehaviour:
     y: 0
     width: 1775
     height: 1307
-  m_MinSize: {x: 406, y: 492}
-  m_MaxSize: {x: 10002, y: 14042}
+  m_MinSize: {x: 404, y: 342}
+  m_MaxSize: {x: 8004, y: 8042}
   vertical: 1
-  controlID: 64
+  controlID: 117
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -230,10 +230,10 @@ MonoBehaviour:
     y: 0
     width: 1775
     height: 890
-  m_MinSize: {x: 406, y: 221}
-  m_MaxSize: {x: 8006, y: 4021}
+  m_MinSize: {x: 404, y: 221}
+  m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 65
+  controlID: 118
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -402,20 +402,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/GoogleARCore/Examples/AugmentedImage/Scripts
+    - Assets/Models
   m_ViewMode: 1
   m_StartGridSize: 58
   m_LastFolders:
-  - Assets/GoogleARCore/Examples/AugmentedImage/Scripts
+  - Assets/Models
   m_LastFoldersGridSize: 58
   m_LastProjectPath: D:\SA_Franziska_Buergler\GitHubSync\ARIdentificationApp\ARCoreNative
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 60}
-    m_SelectedIDs: 9a2f0000
-    m_LastClickedID: 12186
-    m_ExpandedIDs: 000000000a2d0000f22d0000982e0000e22e0000ea2e0000822f0000b62f00004a300000563000000a3100005c31000000ca9a3b
+    scrollPos: {x: 0, y: 489}
+    m_SelectedIDs: 2a310000
+    m_LastClickedID: 12586
+    m_ExpandedIDs: 00000000f02e0000c62f00005a300000a2300000a63000002a3100003831000066310000f2310000fe310000a4320000f232000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -443,7 +443,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000a2d0000f22d0000982e0000e22e0000ea2e0000822f0000b62f00000a3100005c310000
+    m_ExpandedIDs: 00000000f02e0000c62f00005a300000a2300000a63000003831000066310000f2310000fe310000a4320000f2320000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -470,7 +470,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: bc240000482400003e24000096240000802400003a240000b8240000322500008e26000086260000902600009a260000922600009c2600004e290000b02900005a2700003e320000be290000fa2700002c28000066270000682700005e2700006c27000078270000e428000098270000b22800007a2700006e270000403e000058280000cc260000443200004c3e0000ce260000d2260000d8320000d62600002c3c0000a8450000363c0000d83e0000042a0000042700001a2700000227000008270000ee260000f4260000f62600004228000044280000000000000e2f00004a2800004e280000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -559,20 +559,20 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c4280000
+    m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: bccdfbff42cefbffc6cefbff2cd1fbff6839fcffee39fcff723afcffd83cfcff3ab7fcffd4b7fcff6cb8fcffd6bafcff32cefcffb6cefcff38cffcffa2d1fcffbcf5fcffc4f8fcff48f9fcffcaf9fcff30fcfcff9e03fdff2204fdffa404fdff0a07fdffb60ffdff8a2bfdff0e2cfdff902cfdfff62efdffdc45fdff6662fdff0063fdff9863fdff0266fdffb46dfdff6a72fdffe866feff6267feffda67feff4e6afeffcea3feff48a4feffc0a4feff34a7feff80acfefffaacfeff72adfeffe6affeff46ddfeff823dffff043effff843efffff840ffff7c5bffff5c5cffff3a5dffffae5fffff6696ffff4697ffff2498ffff9c9affff9cb2ffff84ddffff5adeffff2edfffffaae1ffff4ef7ffffe6fbffff000000001e400000c24100003253000052540000046a0000586a0000206d0000326d000096750000b2be000006bf00002cc000001ec10000b8c50000ced9000032fc00008c0e0100ea1d0100f42c0100242d0100562d01007a2d0100ea4201003443010092430100c6430100fe5e0100
+    m_ExpandedIDs: 324effffa84effff1c4fffff8051ffffda64ffff5465ffffcc65ffff3068ffff508bffffca8bffff428cffffa68effffacafffff26b0ffff9eb0ffff02b3ffff5ee0ffff62edffffe4edffff64eeffffcaf0ffff14f8ffff16f8ffff18f8ffff0000000090350000a2410000484200007a590000885900002c8600008888000032890000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Copied
-      m_OriginalName: Copied
+      m_Name: VirtuellesModell_Model (1)
+      m_OriginalName: VirtuellesModell_Model (1)
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 77142
+      m_UserData: -12060
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -612,14 +612,14 @@ MonoBehaviour:
     height: 869
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 2847.6477151548293
+  lastFramingTime: 254.7847693353903
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 619.5, y: 426, z: 0}
+    m_Target: {x: -0.13061523, y: -0.5437012, z: 0.21330571}
     speed: 2
-    m_Value: {x: 619.5, y: 426, z: 0}
+    m_Value: {x: -0.13061523, y: -0.5437012, z: 0.21330571}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -639,21 +639,21 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
     yGrid:
-      m_Target: 0
+      m_Target: 1
       speed: 2
-      m_Value: 0
+      m_Value: 1
     zGrid:
       m_Target: 0
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.007194617, y: -0.018619377, z: -0.00009525374, w: -0.9998706}
+    m_Target: {x: -0.20420766, y: 0.67050743, z: -0.19993202, w: -0.6847535}
     speed: 2
-    m_Value: {x: 0.0071941153, y: -0.018618079, z: -0.000095247095, w: -0.99980086}
+    m_Value: {x: -0.20419325, y: 0.6704601, z: -0.19991791, w: -0.68470514}
   m_Size:
-    m_Target: 971.9761
+    m_Target: 0.84907484
     speed: 2
-    m_Value: 971.9761
+    m_Value: 0.84907484
   m_Ortho:
     m_Target: 1
     speed: 2
