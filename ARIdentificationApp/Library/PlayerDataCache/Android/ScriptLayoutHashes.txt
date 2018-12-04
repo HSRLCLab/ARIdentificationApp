@@ -1,8 +1,13 @@
 Android
 PlayerPath?
-D:/SA_Franziska_Buergler/GitHubSync/ARIdentificationApp/ARIdentificationApp/Build/ARIdentificationApp-04-12-2018-ImprovedSampleOnly.apk
+D:/SA_Franziska_Buergler/GitHubSync/ARIdentificationApp/ARIdentificationApp/Build/ARIdentificationApp-04-12-2018-AllScenes.apk
 SceneListBegin?
-Assets/Scenes/ImprovedSampleScene.unity
+Assets/Scenes/MainScene.unity
+Assets/Scenes/Proof.unity
+Assets/Scenes/SampleScene.unity
+Assets/Scenes/ModelTargetGroundPlaneScene.unity
+Assets/Scenes/QRCodeScene.unity
+Assets/Scenes/QRGPScene.unity
 SceneListEnd?
 c422dd62785a6d0afa870fbd111886ce Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 7b803eb2910e9b4cd5e521ae07b9f7d6 Unity.TextMeshPro.dll:TMPro.TMP_Dropdown
@@ -56,6 +61,7 @@ e90403eeda069970e0b9de1533de13a6 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 16da51d1b62ef6d4ee1849350434023b UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 5dd8485451ae18c65d3ef59f54c3c1cc Assembly-CSharp.dll:.Proof_TurnOffTrackingOnTracked
 50b0b141074b216c8b53b1bd467f73c9 Unity.TextMeshPro.dll:TMPro.TMP_InputField
+303f19cade768004f68baea7661665e4 Assembly-CSharp.dll:.ImprovedSample_TurnOffTrackingOnTracked
 53cefe5d98cadefbab750835e70b89c0 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 486cd95c82d8305219c352c06b776e1f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 da2091a04d360891450faf16cdf621f1 UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -314,4 +320,3 @@ c1087bf328bbb39eba5a09f26c3b6368 Vuforia.UnityExtensions.dll:Vuforia.MultiTarget
 c8a41ce4eea7677f6dd2aa0e422a2f04 Vuforia.UnityExtensions.dll:Vuforia.VuMarkBehaviour
 c31ff9acb65f7a15b5c6fd77c3314d83 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 486cd95c82d8305219c352c06b776e1f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
-f95faa0155f2c106087646d909d1192c Assembly-CSharp.dll:.ImprovedSample_TurnOffTrackingOnTracked

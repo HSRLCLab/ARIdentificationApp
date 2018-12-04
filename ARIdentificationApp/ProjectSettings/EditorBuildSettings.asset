@@ -5,25 +5,25 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: bd137af686d3f70488157ccb1b6169c5
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Proof.unity
     guid: da70aee792c45454a99ca3f1685adc25
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/ModelTargetGroundPlaneScene.unity
     guid: 81f50aa46ec7b8944bac9a80a69c7b33
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/QRCodeScene.unity
     guid: d6b3bf01ddec8f945a2ab98fd19cdcd5
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/QRGPScene.unity
     guid: f7791f7a05a16cd4395e9c92973f370d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ImprovedSampleScene.unity
     guid: 7ce98dc5d4f059347874316602915b38
   m_configObjects: {}

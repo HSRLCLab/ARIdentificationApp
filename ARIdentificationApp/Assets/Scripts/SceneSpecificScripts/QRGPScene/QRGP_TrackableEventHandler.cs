@@ -50,6 +50,7 @@ public class QRGP_TrackableEventHandler : DefaultTrackableEventHandler
             //Try to programmatically place the virtual model by triggering the PlaneFinder
             Vector2 moreOrLessWhereModelTargetIs = new Vector2(imageTarget.transform.position.x, imageTarget.transform.position.y);
             myBehaviour.PerformHitTest(moreOrLessWhereModelTargetIs);
+
             //virtualModel.transform.eulerAngles = new Vector3(imageTarget.transform.eulerAngles.x, imageTarget.transform.eulerAngles.y, 90f);
             //virtualModel.transform.eulerAngles = new Vector3(imageTarget.transform.eulerAngles.x, imageTarget.transform.eulerAngles.y - 90f, 90f);
             //virtualModel.transform.eulerAngles = new Vector3(imageTarget.transform.eulerAngles.x, imageTarget.transform.eulerAngles.y + 90f, 90f);
