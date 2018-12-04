@@ -66,7 +66,8 @@
     <Compile Include="Assets\Scripts\BAHersche\ItemComponent.cs" />
     <Compile Include="Assets\Scripts\ComponentInfo.cs" />
     <Compile Include="Assets\Scripts\positioningOptions.cs" />
-    <Compile Include="Assets\Scripts\SceneSpecificScripts\ImporvedSampleScene\ImprovedSample_ComponentInfo.cs" />
+    <Compile Include="Assets\Scripts\SceneSpecificScripts\ImprovedSampleScene\ImprovedSample_ComponentInfo.cs" />
+    <Compile Include="Assets\Scripts\SceneSpecificScripts\ImprovedSampleScene\ImprovedSample_TurnOffTrackingOnTracked.cs" />
     <Compile Include="Assets\Scripts\SceneSpecificScripts\MainScene\MainScene_SwitchSceneOptions.cs" />
     <Compile Include="Assets\Scripts\SceneSpecificScripts\ModelTargetGroundPlaneSceneScripts\MTGPS_TurnOffTrackingOnTracked.cs" />
     <Compile Include="Assets\Scripts\SceneSpecificScripts\ProofSceneScripts\Proof_TurnOffTrackingOnTracked.cs" />

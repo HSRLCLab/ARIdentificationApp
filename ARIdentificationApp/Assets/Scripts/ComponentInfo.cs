@@ -195,15 +195,19 @@ public class ComponentInfo : MonoBehaviour {
         //previousmaterial = currentlySelected.GetComponentInChildren<MeshRenderer>().material;
         Debug.Log("Updateprevious called " + showall);
 
-        //if all compnoents are shown, don't hide them
+        //if all components are shown, don't hide them
         if (showall)
         {
             previousenabled = true;
         }
         //if paint button was clicked, the material has changed
-        else {
+        else
+        {
             Debug.Log("Previous " + previousmaterial);
-            previousmaterial = currentlySelected.GetComponentInChildren<MeshRenderer>().material;
+            if (currentlySelected != null && previousmaterial != null) { 
+                previousmaterial = currentlySelected.GetComponentInChildren<MeshRenderer>().material;
+                
+            }
             Debug.Log("NewPrevious " + previousmaterial);
         }
     }

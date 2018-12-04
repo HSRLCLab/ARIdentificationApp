@@ -68,7 +68,7 @@ public class QRGP_TrackableEventHandler : DefaultTrackableEventHandler
             myBehaviour.PerformHitTest(moreOrLessWhereModelTargetIs);*/
 
             //place vitual model on the ground
-            virtualModel.transform.position = new Vector3(ModelGroundStage.transform.position.x, virtualModel.transform.position.y, virtualModel.transform.position.z);
+            //virtualModel.transform.position = new Vector3(ModelGroundStage.transform.position.x, virtualModel.transform.position.y, virtualModel.transform.position.z);
             //and angle it like the groundplane
             //virtualModel.transform.eulerAngles = new Vector3(ModelGroundStage.transform.eulerAngles.x, ModelGroundStage.transform.eulerAngles.y, ModelGroundStage.transform.eulerAngles.z); //no change
 
@@ -77,9 +77,10 @@ public class QRGP_TrackableEventHandler : DefaultTrackableEventHandler
             /*Position Differenece (-0.1, 0.1, 0.0)
             Angle Difference(0.0, -90.0, 0.0)
             */
+            /*
             virtualModel.transform.eulerAngles = new Vector3(imageTarget.transform.eulerAngles.x, imageTarget.transform.eulerAngles.y + 90f, imageTarget.transform.eulerAngles.z); //does no harm or change
             virtualModel.transform.position = new Vector3(imageTarget.transform.position.x-0.1f, imageTarget.transform.position.y+0.1f, imageTarget.transform.position.z);
-
+            */
             //second try manually add (and place on the ground):
             //virtualModel.transform.position = new Vector3(imageTarget.transform.position.x+1.41f, imageTarget.transform.position.y - 0.5400001f, imageTarget.transform.position.z - 1.08f); // appears on the ground/floor
             //virtualModel.transform.position = new Vector3(ModelGroundStage.transform.position.x, imageTarget.transform.position.y - 0.5400001f, imageTarget.transform.position.z - 1.08f); // appears at: dunno
@@ -90,6 +91,16 @@ public class QRGP_TrackableEventHandler : DefaultTrackableEventHandler
             virtualModel.transform.eulerAngles = new Vector3(0f, 0f, 90.00001f);
             //virtualModel.transform.localScale = new Vector3(18.90.59f, 18.90.59f, 18.90.59f);
             */
+            /*
+            //Test 04.12.2018
+            virtualModel.transform.eulerAngles = imageTarget.transform.eulerAngles - new Vector3(0f, 0f, 90.00001f); //doesn't appear anymore
+            virtualModel.transform.position = imageTarget.transform.position - new Vector3(1.41f, -0.5400001f, -1.08f);
+            */
+            //Test2 04.12.2018
+            virtualModel.transform.eulerAngles = imageTarget.transform.eulerAngles + new Vector3(0.0f, -90.0f, 0.0f); //about 45 degrees away from real model
+            virtualModel.transform.position = imageTarget.transform.position + new Vector3(-0.1f, 0.1f, 0.0f);
+
+
             firsttime = false;
             Debugtext.text += "PlacePlace " + virtualModel.transform.position;
             //ModelTargetBehaviour.GuideViewDisplayMode guideViewDisplayMode = GuideView3DBehaviour;

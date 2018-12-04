@@ -1,13 +1,8 @@
 Android
 PlayerPath?
-D:/SA_Franziska_Buergler/GitHubSync/ARIdentificationApp/ARIdentificationApp/Build/ARIdentificationApp-29-11-2018-AllScenes.apk
+D:/SA_Franziska_Buergler/GitHubSync/ARIdentificationApp/ARIdentificationApp/Build/ARIdentificationApp-04-12-2018-ImprovedSampleOnly.apk
 SceneListBegin?
-Assets/Scenes/MainScene.unity
-Assets/Scenes/Proof.unity
-Assets/Scenes/SampleScene.unity
-Assets/Scenes/ModelTargetGroundPlaneScene.unity
-Assets/Scenes/QRCodeScene.unity
-Assets/Scenes/QRGPScene.unity
+Assets/Scenes/ImprovedSampleScene.unity
 SceneListEnd?
 c422dd62785a6d0afa870fbd111886ce Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 7b803eb2910e9b4cd5e521ae07b9f7d6 Unity.TextMeshPro.dll:TMPro.TMP_Dropdown
@@ -245,10 +240,11 @@ aac9c55ae7ba4b95b852a7d9c191acd1 Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 36135496d38175af74733847eb8de7fb Assembly-CSharp.dll:.QRGP_TrackableEventHandler
 419592f900a43de2c0b35badb1fa0b78 Assembly-CSharp.dll:.ComponentInfo
 e04611b8715e6833d2bd7010fc6be10b Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
-5f53f09959d50c35415f499ed65899ef Assembly-CSharp.dll:.QRGP_MovingScript
+48cd7ba440ef3985d3696e03fa23f75b Assembly-CSharp.dll:.QRGP_MovingScript
 2f9af06a78208a67db480e9bfed4a076 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 9318334b30e9f195f573b2ce00154b95 Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.ItemComponent
+5dc7ed65d49a4790a6c86504e225e8b8 Assembly-CSharp.dll:.QRCodeScene_positioningOptions
 93307bd34e39d73fd24e00ec39c25a91 Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 182e416670915c50a548c38c642db0d8 Vuforia.UnityExtensions.dll:Vuforia.AnchorBehaviour
 f35860350df72508419d9f9fcd288594 Vuforia.UnityExtensions.dll:Vuforia.AnchorInputListenerBehaviour
@@ -318,4 +314,4 @@ c1087bf328bbb39eba5a09f26c3b6368 Vuforia.UnityExtensions.dll:Vuforia.MultiTarget
 c8a41ce4eea7677f6dd2aa0e422a2f04 Vuforia.UnityExtensions.dll:Vuforia.VuMarkBehaviour
 c31ff9acb65f7a15b5c6fd77c3314d83 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 486cd95c82d8305219c352c06b776e1f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
-5dc7ed65d49a4790a6c86504e225e8b8 Assembly-CSharp.dll:.QRCodeScene_positioningOptions
+f95faa0155f2c106087646d909d1192c Assembly-CSharp.dll:.ImprovedSample_TurnOffTrackingOnTracked

@@ -9,9 +9,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class QRGP_MovingScript : MonoBehaviour {
     public GameObject ModelTarget;
+    public Text warning;
+
     // Use this for initialization
     void Start () {
         Debug.Log("Test for positioning");
@@ -22,7 +25,7 @@ public class QRGP_MovingScript : MonoBehaviour {
         Debug.Log("Position Differenece " + (ModelTarget.transform.position-transform.position));
         Debug.Log("Angle Difference " + (ModelTarget.transform.eulerAngles- transform.eulerAngles));
         Debug.Log("Position Vector distance " + Vector3.Distance(ModelTarget.transform.position, transform.position));
-        
+        warning.text += "Startup"+name;
     }
 	
 	// Update is called once per frame
@@ -35,8 +38,10 @@ public class QRGP_MovingScript : MonoBehaviour {
     {
         // Move the object upward in world space 1 unit/second.
 
-        //transform.Translate(0, Time.deltaTime, 0, Space.World);
-        transform.Translate(0, Time.deltaTime, 0);
+        transform.Translate(0, Time.deltaTime, 0, Space.World);
+        //transform.Translate(0, Time.deltaTime, 0);
+        warning.text = "Up you go"+ name;
+        Debug.Log("MOVE MODEL UP");
     }
 
     public void MoveDown()
@@ -110,9 +115,12 @@ public class QRGP_MovingScript : MonoBehaviour {
         //Reset the VirtualModel to it's initial position, or wherever the ModelTarget currently is
        // transform.eulerAngles = ModelTarget.transform.eulerAngles;
         //transform.position = ModelTarget.transform.position;
-
+        /*
         transform.position = new Vector3(ModelTarget.transform.position.x - 0.1f, ModelTarget.transform.position.y + 0.1f, ModelTarget.transform.position.z);
         transform.eulerAngles = new Vector3(ModelTarget.transform.eulerAngles.x, ModelTarget.transform.eulerAngles.y + 90f, ModelTarget.transform.eulerAngles.z);
+        */
+        transform.eulerAngles = ModelTarget.transform.eulerAngles + new Vector3(0.0f, -90.0f, 0.0f); //about 45 degrees away from real model
+        transform.position = ModelTarget.transform.position + new Vector3(-0.1f, 0.1f, 0.0f);
     }
 
 }
