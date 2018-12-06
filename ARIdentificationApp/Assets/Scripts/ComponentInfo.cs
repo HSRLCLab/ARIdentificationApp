@@ -204,6 +204,7 @@ public class ComponentInfo : MonoBehaviour {
         else
         {
             Debug.Log("Previous " + previousmaterial);
+            //only do so, if there is currently something selected and a previous material is available
             if (currentlySelected != null && previousmaterial != null) { 
                 previousmaterial = currentlySelected.GetComponentInChildren<MeshRenderer>().material;
                 

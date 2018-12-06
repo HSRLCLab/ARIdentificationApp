@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/QRGPScene.unity
+- path: Assets/Scenes/ModelTargetGroundPlaneScene.unity
   isLoaded: 1
   isActive: 1

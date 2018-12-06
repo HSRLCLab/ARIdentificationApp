@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-D:/SA_Franziska_Buergler/GitHubSync/ARIdentificationApp/ARIdentificationApp/Build/ARIdentificationApp-04-12-2018-AllScenes.apk
+D:/SA_Franziska_Buergler/GitHubSync/ARIdentificationApp/ARIdentificationApp/Build/ARIdentificationApp-06-12-2018-AllScenes.apk
 SceneListBegin?
 Assets/Scenes/MainScene.unity
 Assets/Scenes/Proof.unity

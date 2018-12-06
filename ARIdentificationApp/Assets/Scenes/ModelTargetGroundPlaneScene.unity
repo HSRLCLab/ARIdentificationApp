@@ -428,7 +428,7 @@ MonoBehaviour:
   blue: {fileID: 2100000, guid: 96f3e0b9f4df66d42a48eb2762da6e2f, type: 2}
   magenta: {fileID: 2100000, guid: 620cdd062816b0947aa3ba4602a26cc6, type: 2}
   greyMaterial: {fileID: 2100000, guid: cbfd382baffe6bc499ee58fc8d72e2da, type: 2}
-  testmaterial: {fileID: 0}
+  testmaterial: {fileID: 2100000, guid: a25d380b485f72c41b6522bad0f70be0, type: 2}
 --- !u!114 &4507190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4888,7 +4888,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 1887421553}
-  m_PlaneDistance: 1
+  m_PlaneDistance: 0.1
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -13995,7 +13995,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 1887421553}
-  m_PlaneDistance: 1.1
+  m_PlaneDistance: 0.2
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0

@@ -97,10 +97,14 @@ public class QRGP_TrackableEventHandler : DefaultTrackableEventHandler
             virtualModel.transform.eulerAngles = imageTarget.transform.eulerAngles - new Vector3(0f, 0f, 90.00001f); //doesn't appear anymore
             virtualModel.transform.position = imageTarget.transform.position - new Vector3(1.41f, -0.5400001f, -1.08f);
             */
+            /*
             //Test2 04.12.2018
             virtualModel.transform.eulerAngles = imageTarget.transform.eulerAngles + new Vector3(0.0f, -90.0f, 0.0f); //about 45 degrees away from real model
             virtualModel.transform.position = imageTarget.transform.position + new Vector3(-0.1f, 0.1f, 0.0f);
-
+            */
+            //Test 06.12.2018
+            virtualModel.transform.eulerAngles = imageTarget.transform.eulerAngles + new Vector3(0.0f, -90.0f, 0.0f); //not on the ground, to far in the back, not correct angle
+            virtualModel.transform.position = imageTarget.transform.position + new Vector3(-0.1f, 0.1f, 0.0f);
 
             firsttime = false;
             Debugtext.text += "PlacePlace " + virtualModel.transform.position;
