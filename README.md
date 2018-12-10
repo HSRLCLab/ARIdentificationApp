@@ -1,5 +1,8 @@
-# ARIdentificationApp
+# ARIdentificationApp - QRCodePlacementBranch
 
+State with the QR Code placement tests in the SparepartIdentifier project. 
+
+----------------------------------------------------------------------------------------------------------------------------
 Project state: Currently working project. Will end on December 21st.
 
 Target operating system: Android 8.0 (Oreo)
