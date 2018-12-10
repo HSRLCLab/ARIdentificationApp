@@ -10,3 +10,8 @@ Used versions:
   - ARCore 1.4.
 
 Purpose: App which should be able to recognize a predefined 3D object, overload a virtual object and showing information to parts of the object.
+
+End state: three projects:
+  - GroundplaneTests: The app using only a Ground Plane to place the virtual model, no recognition used.
+  - ARIdentificationApp: A proof of concept to test different recognition techniques (Model Target, QR Code)
+  - SparepartIdentifier: The final app using QRCode as recognition technique.
