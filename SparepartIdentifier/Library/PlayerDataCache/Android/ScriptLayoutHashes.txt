@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-D:/SA_Franziska_Buergler/GitHubSync/ARIdentificationApp/SparepartIdentifier/Build/SparepartIdentifierApp-10-12-2018.apk
+D:/SA_Franziska_Buergler/GitHubSync/ARIdentificationApp/SparepartIdentifier/Build/SparepartIdentifierApp-11-12-2018.apk
 SceneListBegin?
 Assets/Scenes/MainScene.unity
 SceneListEnd?

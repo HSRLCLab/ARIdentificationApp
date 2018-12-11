@@ -3,6 +3,7 @@
 	Comment: Append the Stücklisteninformation to each Component.
 			Some parts copied from DemoStart.cs and Stueckliste.cs 
 			from Pickerzelle_V1.5_3 of BA from Simon Hersche 2017.
+    Last Updated: 11.12.2018 - removed all debuggingtexts, and cleanup of code
 	Author: Franziska Bürgler
 	
 ---------------------------------------------------------------------------*/
@@ -23,6 +24,7 @@ public class ComponentInfo : MonoBehaviour {
     private GameObject currentlySelected;
     private Material previousmaterial = null;
     private bool previousenabled = true;
+
     // Use this for initialization
     void Start () {
 
@@ -35,11 +37,7 @@ public class ComponentInfo : MonoBehaviour {
             if (child.GetComponent<MeshCollider>() == null)
             {
                 child.AddComponent<MeshCollider>();
-                //AddMeshCollider collider = child.AddComponent<AddMeshCollider>();
-                //child.AddComponent<InputBehavior>();
-                //collider.update1();
             }
-
 
 
             //Get the direct parent to add the item with the Stücklisteninformation there (if not already done so)
@@ -47,8 +45,8 @@ public class ComponentInfo : MonoBehaviour {
             if (itemGameObject.GetComponent<ItemComponent>() == null) { 
                 //Set newly created item as child of the component, but first add ItemComponent (doesn't work otherwise)
                 var ic = itemGameObject.AddComponent<ItemComponent>();
+
                 //Add some information to the components that shall be clickable
-                
                 ic.item = ManualMapping(itemGameObject.name);
                 
             }
@@ -61,16 +59,15 @@ public class ComponentInfo : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         Transform currentHit;
+        
         //Clickevents on component
         if (Input.GetMouseButtonDown(0))
         {
-            Debuggtext.text = "Mousedown ";
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit))
             {
-                Debuggtext.text += "Hit " + hit.transform.name;
-
+                
                 currentHit = hit.transform;
 
                 //Show components information (name, number description
@@ -149,7 +146,6 @@ public class ComponentInfo : MonoBehaviour {
     //Hide the currently selected component
     public void HideComponent()
     {
-        Debuggtext.text += "CurrentlySelected to hide " + currentlySelected.name; 
         //Totally disable component to click component behind
         if (currentlySelected != null) {
             if (currentlySelected.activeInHierarchy)
@@ -189,22 +185,19 @@ public class ComponentInfo : MonoBehaviour {
         }
     }
 
-    //Special case if Show_All or Paint button was clicked
+    //Special case if Show_All or Paint button was clicked, which is indicated by the parameter, 
+    //showall = true means the Show_All button calls the function, if false, it's the paint button
     public void updatePreviousValues(bool showall)
     {
-        //previousmaterial = currentlySelected.GetComponentInChildren<MeshRenderer>().material;
-        Debug.Log("Updateprevious called " + showall);
-
-        //if all compnoents are shown, don't hide them
+        
+        //if all components are shown, don't hide them
         if (showall)
         {
             previousenabled = true;
         }
         //if paint button was clicked, the material has changed
         else {
-            Debug.Log("Previous " + previousmaterial);
             previousmaterial = currentlySelected.GetComponentInChildren<MeshRenderer>().material;
-            Debug.Log("NewPrevious " + previousmaterial);
         }
     }
 
@@ -224,7 +217,7 @@ public class ComponentInfo : MonoBehaviour {
 		10: GreiferServo
 		11: ArmServo
 
-        //Default initialisation
+        //Default initialisation (from BA S.Hersche)
         Item item = new Item()
             {
                 number = "Number: " + counter + ";",

@@ -1,4 +1,14 @@
-﻿using System.Collections;
+﻿/* -----------------------------------------------------------------------
+	Date: 06.12.2018
+	Comment: Position the virtual model manually. Copied from positioningOptions.cs.
+            and the reset functionality from QRCodeScene_positioningOptions.cs 
+            of the ARIdentificationApp.
+    Last Updated: 11.12.2018 - removed all debuggingtexts, and cleanup of code
+	Author: Franziska Bürgler
+	
+---------------------------------------------------------------------------*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,23 +17,32 @@ public class positioningOptions : MonoBehaviour {
 	public GameObject VirtualModel;
 	public GameObject ModelTarget;
 	
-	
-	// Use this for initialization
-	void Start () {
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-	
-	public void MoveUp(){
+	private Vector3 initialPosition;
+    private Vector3 initialAngle;
+    private Vector3 initialPosDiff;
+    private Vector3 initialAngleDiff;
+
+    // Use this for initialization
+    void Start()
+    {
+        //store the initial difference between Virtual Model and ImageTarget - needed in Reset()
+        initialPosDiff = VirtualModel.transform.position - ModelTarget.transform.position;
+        initialAngleDiff = VirtualModel.transform.eulerAngles - ModelTarget.transform.eulerAngles;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+    public void MoveUp(){
 		// Move the object upward in world space 1 unit/second.
 		VirtualModel.transform.Translate(0, Time.deltaTime, 0, Space.World);
     }
 	
 	public void MoveDown(){
-		// Move the object upward in world space 1 unit/second.
+		// Move the object downwards in world space 1 unit/second.
 		VirtualModel.transform.Translate(0, -Time.deltaTime, 0, Space.World);
 	}
 	
@@ -76,10 +95,12 @@ public class positioningOptions : MonoBehaviour {
 		// Rotate the object around the global Z axis at 10 degree per second counterclockwise
 		VirtualModel.transform.Rotate(0, 0, -Time.deltaTime*10, Space.World);
 	}
-	
-	public void Reset(){
-		//Reset the VirtualModel to it's initial position, or wherever the ModelTarget currently is
-		VirtualModel.transform.eulerAngles = ModelTarget.transform.eulerAngles;
-		VirtualModel.transform.position = ModelTarget.transform.position;
-	}
+
+    public void Reset()
+    {
+        //Reset the VirtualModel the ImageTarget's position and the initial difference between VirtualModel and ImageTarget
+        VirtualModel.transform.eulerAngles = ModelTarget.transform.eulerAngles + initialAngleDiff;
+        VirtualModel.transform.position = ModelTarget.transform.position + initialPosDiff;
+
+    }
 }

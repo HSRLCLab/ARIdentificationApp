@@ -1,4 +1,13 @@
-﻿using System.Collections;
+﻿/* -----------------------------------------------------------------------
+	Date: 06.12.2018
+	Comment: Functions on the VirtualModel itself like paint and show/hide it. 
+            Copied from VirtualModelLoad.cs of the ARIdentificationApp.
+    Last Updated: 11.12.2018 - removed all debuggingtexts, and cleanup of code
+	Author: Franziska Bürgler
+	
+---------------------------------------------------------------------------*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -30,36 +39,19 @@ public class VirtualModelLoad : MonoBehaviour
     //Paint the virtual model (called from buttonclick)
     public void PaintVirtualModel()
     {
-
-        Debug.Log("Virtual Model paint");
         //Go through all children and set a material if they have a mesh collider
         foreach (MeshRenderer component in virtualModel.GetComponentsInChildren<MeshRenderer>(true))
         {
-            //Debug.Log("Found a child with meshrenderer: " + component.gameObject.name);
             if (component.gameObject.GetComponent<MeshCollider>() == null) {
                 component.gameObject.AddComponent<MeshCollider>();
             }
-            //Debug.Log("Found childs parent " + component.transform.parent.gameObject.name);
+            
             var parent = component.transform.parent.gameObject;
             Material mymaterial;
 
-            /*
-            int numericparent = int.Parse(parent);
-            if (numericparent % 3 == 0)
-            {
-                mymaterial = cyan;
-            }
-            else if (numericparent % 3 == 1)
-            {
-                mymaterial = magenta;
-            }
-            else
-            {
-                mymaterial = blue;
-            }
-            */
             mymaterial = testmaterial;
-            // Get color based on riskofFailure (only of the parts which have a stuecklisten eintrag)
+
+            // Get color based on riskofFailure (only of the parts which have a "stuecklisten eintrag")
             if (parent.GetComponent<ItemComponent>().item != null) { 
                 string failurerisk = parent.GetComponent<ItemComponent>().item.riskOfFailure;
                 switch (failurerisk) {
@@ -81,6 +73,7 @@ public class VirtualModelLoad : MonoBehaviour
             component.material = mymaterial;
 
         }
+
         //update the previous values as the have changed in the meantime
         virtualModel.GetComponentInParent<ComponentInfo>().updatePreviousValues(false);
     }
@@ -104,7 +97,7 @@ public class VirtualModelLoad : MonoBehaviour
             component.gameObject.SetActive(true);
             //The Mesh Renderer will be enabled in the HideVirtualModel which is called after this function
         }
-        //update the previous values as the have changed in the meantime
+        //update the previous values as they have changed in the meantime
         virtualModel.GetComponent<ComponentInfo>().updatePreviousValues(true);
     }
     
