@@ -17,6 +17,7 @@ public class ComponentInfo : MonoBehaviour {
 	public GameObject VirtualModellFirstChild; //In this example the gameObject called "12"
 	public Material selectedMaterial;
     public GameObject ItemValues; //The object which contains the textboxes where the information of the clicked component shall be shown
+    public Text ItemTitle; //The textbox, where the name of the currently selected component shall be shown
     public Text Debuggtext;
 
     private int counter = 0;
@@ -87,10 +88,14 @@ public class ComponentInfo : MonoBehaviour {
                         {
                             infotext.text = currentItem.number;
                         }
+                        /* //Price informations
                         else if (infotext.name == "ItemValue3_Text")
                         {
                             infotext.text = currentItem.description;
                         }
+                        */
+                        //Set the title to the currently selected item
+                        ItemTitle.text = currentItem.description;
                     }
                     else
                     {
@@ -178,11 +183,15 @@ public class ComponentInfo : MonoBehaviour {
             {
                 infotext.text = "Legoroboter";
             }
+            /* //Priceinformation
             else if (infotext.name == "ItemValue3_Text")
             {
                 infotext.text = "Legoroboter";
             }
+            */
         }
+        //reset title
+        ItemTitle.text = "Item Title";
     }
 
     //Special case if Show_All or Paint button was clicked, which is indicated by the parameter, 

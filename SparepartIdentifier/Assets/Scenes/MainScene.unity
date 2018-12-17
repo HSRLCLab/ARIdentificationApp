@@ -1545,7 +1545,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &488352093
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3420,6 +3420,7 @@ MonoBehaviour:
   VirtualModellFirstChild: {fileID: 975402225}
   selectedMaterial: {fileID: 2100000, guid: cbfd382baffe6bc499ee58fc8d72e2da, type: 2}
   ItemValues: {fileID: 485195022}
+  ItemTitle: {fileID: 1794424609}
   Debuggtext: {fileID: 2117155910}
 --- !u!114 &975402228
 MonoBehaviour:
@@ -5138,7 +5139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1551525511
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6328,8 +6329,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 90, y: -30}
-  m_SizeDelta: {x: 180, y: 50}
+  m_AnchoredPosition: {x: 149.7, y: -30}
+  m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1794424609
 MonoBehaviour:
