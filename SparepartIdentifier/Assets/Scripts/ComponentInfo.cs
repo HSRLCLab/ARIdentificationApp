@@ -198,11 +198,10 @@ public class ComponentInfo : MonoBehaviour {
     //showall = true means the Show_All button calls the function, if false, it's the paint button
     public void updatePreviousValues(bool showall)
     {
-        
         //if all components are shown, don't hide them
         if (showall)
         {
-            previousenabled = true;
+            previousenabled = currentlySelected.GetComponentInChildren<MeshRenderer>().enabled; 
         }
         //if paint button was clicked, the material has changed
         else {

@@ -86,6 +86,8 @@ public class VirtualModelLoad : MonoBehaviour
         {
             component.enabled = callingButton.isOn;
         }
+        //update the previous values as they have changed in the meantime
+        virtualModel.GetComponent<ComponentInfo>().updatePreviousValues(true);
     }
     
     //Set all components of the virtual model active again
@@ -97,8 +99,7 @@ public class VirtualModelLoad : MonoBehaviour
             component.gameObject.SetActive(true);
             //The Mesh Renderer will be enabled in the HideVirtualModel which is called after this function
         }
-        //update the previous values as they have changed in the meantime
-        virtualModel.GetComponent<ComponentInfo>().updatePreviousValues(true);
+       
     }
     
 }
